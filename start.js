@@ -1,0 +1,37 @@
+console.log(document.documentURI)
+console.log(document.body)
+console.log(document)
+let v = document.getElementsByClassName('classece')
+console.log(v)
+let n = document.getElementById('idece')
+console.log(n)
+let tagname = document.querySelectorAll('p')
+console.log(tagname)
+let tagnames = document.querySelectorAll('p')
+console.log(tagnames[3])
+let tagname3 = document.querySelectorAll('#idece')
+console.log(tagname3)
+let tagname4= document.querySelector('p')
+console.log(tagname4)
+let tagname5= document.querySelector('p')
+tagname5.textContent="Ramu"
+console.log(tagname5)
+let tagname6= document.querySelectorAll('p')
+tagname6.forEach((p) =>{p.textContent = "Ramu"})
+console.log(tagname6)
+// let tagname7= document.querySelectorAll('p')
+// tagname4.forEach((p) =>{p.remove()})
+// console.log(tagname7)
+let newtag = document.createElement('p')
+newtag.textContent = "Donot eat snaks"
+document.querySelector('body').appendChild(newtag)
+document.querySelector('button').addEventListener('click',() => console.log("Ramu"))
+console.log(document.querySelector('button'))
+document.querySelector('button').addEventListener('click',(event) => event.target.textContent="Added")
+document.querySelector('h1').textContent = "Torture class"
+function search()
+{
+    console.log("Ramu")
+    let bg = document.querySelector('body')
+    bg.style.background="blue"
+}
